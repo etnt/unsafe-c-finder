@@ -105,6 +105,10 @@ user    0m0.289s
 sys     0m0.071s
 ```
 
+## Screenshot
+
+<a href="screenshot.jpg"><img src="screenshot.jpg" alt="screenshot" width="19%"></a>
+
 ## Licence
 
 MPL-2.0
