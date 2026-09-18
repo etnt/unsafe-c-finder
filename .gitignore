@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+unsafe-c-finder-eval-*.json
+unsafe-c-finder-eval-*.html

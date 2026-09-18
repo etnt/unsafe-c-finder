@@ -1,0 +1,142 @@
+[
+  {
+    "id": "01",
+    "path": "01_strcpy_overflow.c",
+    "unsafe": true,
+    "cwes": ["cwe_787_121"],
+    "rationale": "Unbounded copy into a fixed-size stack buffer"
+  },
+  {
+    "id": "02",
+    "path": "02_use_after_free.c",
+    "unsafe": true,
+    "cwes": ["cwe_416"],
+    "rationale": "The allocation is read after it has been freed"
+  },
+  {
+    "id": "03",
+    "path": "03_oob_read.c",
+    "unsafe": true,
+    "cwes": ["cwe_125"],
+    "rationale": "The array index is not checked against the supplied count"
+  },
+  {
+    "id": "04",
+    "path": "04_null_deref.c",
+    "unsafe": true,
+    "cwes": ["cwe_476"],
+    "rationale": "The malloc result is dereferenced without a null check"
+  },
+  {
+    "id": "05",
+    "path": "05_int_overflow_alloc.c",
+    "unsafe": true,
+    "cwes": ["cwe_190"],
+    "rationale": "The allocation size multiplication can wrap"
+  },
+  {
+    "id": "06",
+    "path": "06_uninit_read.c",
+    "unsafe": true,
+    "cwes": ["cwe_457"],
+    "rationale": "The local variable is returned uninitialized on one path"
+  },
+  {
+    "id": "07",
+    "path": "07_format_string.c",
+    "unsafe": true,
+    "cwes": ["cwe_78_134"],
+    "rationale": "Untrusted text is used as the printf format string"
+  },
+  {
+    "id": "08",
+    "path": "08_missing_free.c",
+    "unsafe": true,
+    "cwes": ["cwe_401_772"],
+    "rationale": "Each loop iteration leaks its allocation"
+  },
+  {
+    "id": "09",
+    "path": "09_double_free.c",
+    "unsafe": true,
+    "cwes": ["cwe_415"],
+    "rationale": "The same pointer is freed twice"
+  },
+  {
+    "id": "10",
+    "path": "10_broken_crypto.c",
+    "unsafe": true,
+    "cwes": ["cwe_327"],
+    "rationale": "MD5 is used directly as a password digest"
+  },
+  {
+    "id": "11",
+    "path": "11_bounded_memcpy.c",
+    "unsafe": false,
+    "cwes": [],
+    "rationale": "The fixed string, including its terminator, fits in the local buffer"
+  },
+  {
+    "id": "12",
+    "path": "12_free_then_null.c",
+    "unsafe": false,
+    "cwes": [],
+    "rationale": "The pointer is freed once and cleared"
+  },
+  {
+    "id": "13",
+    "path": "13_index_checked.c",
+    "unsafe": false,
+    "cwes": [],
+    "rationale": "The index is checked before the array read"
+  },
+  {
+    "id": "14",
+    "path": "14_malloc_null_check.c",
+    "unsafe": false,
+    "cwes": [],
+    "rationale": "The allocation is checked and released"
+  },
+  {
+    "id": "15",
+    "path": "15_saturating_mul.c",
+    "unsafe": false,
+    "cwes": [],
+    "rationale": "The multiplication is bounded before allocation"
+  },
+  {
+    "id": "16",
+    "path": "16_init_before_use.c",
+    "unsafe": false,
+    "cwes": [],
+    "rationale": "The local variable is initialized on every path"
+  },
+  {
+    "id": "17",
+    "path": "17_printf_percent_s.c",
+    "unsafe": false,
+    "cwes": [],
+    "rationale": "Untrusted text is passed as data to a fixed format string"
+  },
+  {
+    "id": "18",
+    "path": "18_malloc_free_pair.c",
+    "unsafe": false,
+    "cwes": [],
+    "rationale": "The allocation is checked and freed on the successful path"
+  },
+  {
+    "id": "19",
+    "path": "19_free_once.c",
+    "unsafe": false,
+    "cwes": [],
+    "rationale": "The pointer is conditionally freed once and cleared"
+  },
+  {
+    "id": "20",
+    "path": "20_modern_password_kdf.c",
+    "unsafe": false,
+    "cwes": [],
+    "rationale": "A modern password KDF is used with a supplied salt"
+  }
+]
